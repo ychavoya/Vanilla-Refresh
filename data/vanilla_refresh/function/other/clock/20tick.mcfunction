@@ -4,7 +4,7 @@
 #biome announce
 #execute if data storage vanilla_refresh_config:config config{biome:1} as @a[scores={refresh_player_tick2=200..}] unless score @s refresh_player_uitoastout matches 1.. at @s run function vanilla_refresh:other_features/biome/main
 
-execute store result score gamerule_keepInventory refresh_storage run gamerule keepInventory
+execute store result score gamerule_keepInventory refresh_storage run gamerule minecraft:keep_inventory
 
 
 execute if data storage vanilla_refresh_config:config config{cyclestats:1} run function vanilla_refresh:other_features/cycle/root
@@ -16,10 +16,10 @@ execute if data storage vanilla_refresh_config:config config{jukebox_stop_sound:
 
 # timestopper
     #reset
-    execute if data storage vanilla_refresh_config:config config{stoptime:1} if entity @a run gamerule doDaylightCycle true
+    execute if data storage vanilla_refresh_config:config config{stoptime:1} if entity @a run gamerule minecraft:advance_time true
 
     # no players
-    execute if data storage vanilla_refresh_config:config config{stoptime:1} unless entity @a run gamerule doDaylightCycle false
+    execute if data storage vanilla_refresh_config:config config{stoptime:1} unless entity @a run gamerule minecraft:advance_time false
 
 
 #baby zombie

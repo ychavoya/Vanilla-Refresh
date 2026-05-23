@@ -81,6 +81,8 @@ execute as @e[type=marker,tag=refresh_entity_command_block] at @s if entity @p[d
 #execute as @a[advancements={vanilla_refresh:zblock=true}] at @s run function vanilla_refresh:other/placed_block
 
 
+execute as @a[tag=refresh_teleport_to_world_spawn] run function vanilla_refresh:other/actions/teleport_to_world_spawn
+
 #lodestone
 execute if data storage vanilla_refresh_config:config config{lodestone:1} as @e[type=marker,tag=refresh_entity_lodestone] at @s run function vanilla_refresh:block/lodestone/marker
 execute if data storage vanilla_refresh_config:config config{lodestone:1} as @a[predicate=vanilla_refresh:holding/ender_pearl] at @s if entity @e[type=marker,tag=refresh_entity_lodestone_teleport,distance=..128] run function vanilla_refresh:block/lodestone/holding_pearl

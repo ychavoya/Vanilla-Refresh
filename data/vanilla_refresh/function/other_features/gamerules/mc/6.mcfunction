@@ -2,33 +2,24 @@
 tellraw @s [{"text": " "}]
 
 
-execute unless score waterSourceConversion refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Water Source Conversion: "},{"score":{"name": "waterSourceConversion","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score waterSourceConversion refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Water Source Conversion: "},{"score":{"name": "waterSourceConversion","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Water Source Conversion: "},{"score":{"name": "minecraft:water_source_conversion","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score snowAccumulationHeight refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Snow Accumulation Height: "},{"score":{"name": "snowAccumulationHeight","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score snowAccumulationHeight refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Snow Accumulation Height: "},{"score":{"name": "snowAccumulationHeight","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Snow Accumulation Height: "},{"score":{"name": "minecraft:max_snow_accumulation_height","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score mobExplosionDropDecay refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Mob Explosion Drop Decay: "},{"score":{"name": "mobExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score mobExplosionDropDecay refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Mob Explosion Drop Decay: "},{"score":{"name": "mobExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Mob Explosion Drop Decay: "},{"score":{"name": "minecraft:mob_explosion_drop_decay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score blockExplosionDropDecay refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Block Explosion Drop Decay: "},{"score":{"name": "blockExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score blockExplosionDropDecay refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Block Explosion Drop Decay: "},{"score":{"name": "blockExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Block Explosion Drop Decay: "},{"score":{"name": "minecraft:block_explosion_drop_decay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score tntExplosionDropDecay refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"TNT Explosion Drop Decay: "},{"score":{"name": "tntExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score tntExplosionDropDecay refresh_gamerules matches 0 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"TNT Explosion Drop Decay: "},{"score":{"name": "tntExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"TNT Explosion Drop Decay: "},{"score":{"name": "minecraft:tnt_explosion_drop_decay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score tntExplodes refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"TNT Explodes: "},{"score":{"name": "tntExplodes","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score tntExplodes refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"TNT Explodes: "},{"score":{"name": "tntExplodes","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"TNT Explodes: "},{"score":{"name": "minecraft:tnt_explodes","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doVinesSpread refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Do Vines Spread: "},{"score":{"name": "doVinesSpread","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doVinesSpread refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Do Vines Spread: "},{"score":{"name": "doVinesSpread","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Do Vines Spread: "},{"score":{"name": "minecraft:spread_vines","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score commandModificationBlockLimit refresh_gamerules matches 32768 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Command Modification Block Limit: "},{"score":{"name": "commandModificationBlockLimit","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score commandModificationBlockLimit refresh_gamerules matches 32768 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Command Modification Block Limit: "},{"score":{"name": "commandModificationBlockLimit","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Command Modification Block Limit: "},{"score":{"name": "minecraft:max_block_modifications","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score enderPearlsVanishOnDeath refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Ender Pearls Vanish on Death: "},{"score":{"name": "enderPearlsVanishOnDeath","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score enderPearlsVanishOnDeath refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Ender Pearls Vanish on Death: "},{"score":{"name": "enderPearlsVanishOnDeath","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Ender Pearls Vanish on Death: "},{"score":{"name": "minecraft:ender_pearls_vanish_on_death","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
 

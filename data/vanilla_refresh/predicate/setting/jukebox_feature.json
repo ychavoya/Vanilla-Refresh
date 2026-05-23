@@ -6,7 +6,7 @@
       "value": {
         "type": "minecraft:storage",
         "storage": "vanilla_refresh_config:config",
-        "path": "config.jukebox"
+        "path": "config.blockanims_jukebox"
       },
       "range": 1
     },

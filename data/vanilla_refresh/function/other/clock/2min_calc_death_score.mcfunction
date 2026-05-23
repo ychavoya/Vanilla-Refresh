@@ -1,5 +1,5 @@
 
-### DEATH AVG CALC including pvp deaths
+### DEATH AVG CALC including minecraft:pvp deaths
 
 #stores deaths into death average score for use
 execute store result score @s refresh_player_deathaverage run scoreboard players get @s refresh_player_deaths
@@ -30,7 +30,7 @@ scoreboard players operation @s refresh_player_deathaverage /= num_1000 refresh_
 
 ######################################################
 
-### DEATH AVG CALC but with non pvp deaths
+### DEATH AVG CALC but with non minecraft:pvp deaths
 
 
 #stores deaths into death average score for use

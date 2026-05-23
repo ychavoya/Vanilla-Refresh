@@ -66,7 +66,7 @@ scoreboard players set @s refresh_player_d_minutes 0
 #lingering death drops
 execute if data storage vanilla_refresh_config:config config{death_items:1} run function vanilla_refresh:death/item/death_drop
 
-#non player pvp deaths
+#non player minecraft:pvp deaths
 scoreboard players add @s refresh_player_deaths_non_pvp 1
 execute if entity @s[advancements={vanilla_refresh:player/death_player=true}] run scoreboard players remove @s refresh_player_deaths_non_pvp 1
 
@@ -75,18 +75,4 @@ function vanilla_refresh:other/clock/2min_calc_death_score
 advancement revoke @s only vanilla_refresh:player/death_player
 
 
-advancement revoke @s only vanilla_refresh:death/arrow
-advancement revoke @s only vanilla_refresh:death/explosion
-advancement revoke @s only vanilla_refresh:death/magic
-advancement revoke @s only vanilla_refresh:death/trident
-advancement revoke @s only vanilla_refresh:death/axe
-
-advancement revoke @s only vanilla_refresh:death/ender_dragon
-advancement revoke @s only vanilla_refresh:death/shulkerstone
-advancement revoke @s only vanilla_refresh:death/wither
-advancement revoke @s only vanilla_refresh:death/ravager
-advancement revoke @s only vanilla_refresh:death/warden
-advancement revoke @s only vanilla_refresh:death/elder_guardian
-
-advancement revoke @s only vanilla_refresh:death/blaze_king
-advancement revoke @s only vanilla_refresh:death/hovering_inferno
+advancement revoke @s through vanilla_refresh:death/arrow

@@ -1,7 +1,9 @@
+playsound minecraft:entity.player.big_fall player @a[distance=..16] ~ ~ ~ 1 1
+
 playsound minecraft:entity.player.big_fall player @a[distance=..16] ~ ~ ~ .4 .7
 
 playsound minecraft:block.calcite.break player @a[distance=..16] ~ ~ ~ 2 1.2
-playsound minecraft:block.calcite.break player @a[distance=..16] ~ ~ ~ 2 .5
+playsound minecraft:block.netherrack.break player @a[distance=..16] ~ ~ ~ 2 .5
 
 
 

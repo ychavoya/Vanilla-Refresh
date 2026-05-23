@@ -13,6 +13,7 @@
           }
         }
       }
-    }
+    },
+  "parent": "vanilla_refresh:death/arrow"
   }
   

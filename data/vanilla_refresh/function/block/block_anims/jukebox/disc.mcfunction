@@ -33,6 +33,10 @@ execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_wait"}} run 
 
 execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_ward"}} run data modify storage vanilla_refresh:storage jukebox.color set value "color:[0.000,0.729,0.290]"
 
+execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_tears"}} run data modify storage vanilla_refresh:storage jukebox.color set value "color:[0.659,1.000,0.988]"
+
+execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_lava_chicken"}} run data modify storage vanilla_refresh:storage jukebox.color set value "color:[1.000,0.165,0.000]"
+
 
 data modify storage vanilla_refresh:storage jukebox.disc set string block ~ ~ ~ RecordItem.id 21
 execute unless data storage vanilla_refresh:storage {jukebox:0} positioned ~ ~-.5 ~ run function vanilla_refresh:block/block_anims/jukebox/particle/box with storage vanilla_refresh:storage jukebox
@@ -63,3 +67,7 @@ execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_5"}} run sum
 execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_precipice"}} run summon armor_stand ~.55 ~-1.025 ~-.4 {ShowArms:1b,equipment:{offhand:{id:"minecraft:music_disc_precipice",count:1b,components:{custom_data:{VanillaRefreshClear:1}}}},Tags:["refresh_discinsert","refresh_discinsert_special"],Pose:{LeftArm:[-90f,0f,0f]},Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[90f,0.0f],DisabledSlots:65536}
 execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_creator"}} run summon armor_stand ~.55 ~-1.025 ~-.4 {ShowArms:1b,equipment:{offhand:{id:"minecraft:music_disc_creator",count:1b,components:{custom_data:{VanillaRefreshClear:1}}}},Tags:["refresh_discinsert","refresh_discinsert_special"],Pose:{LeftArm:[-90f,0f,0f]},Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[90f,0.0f],DisabledSlots:65536}
 execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_creator_music_box"}} run summon armor_stand ~.55 ~-1.025 ~-.4 {ShowArms:1b,equipment:{offhand:{id:"minecraft:music_disc_creator_music_box",count:1b,components:{custom_data:{VanillaRefreshClear:1}}}},Tags:["refresh_discinsert"],Pose:{LeftArm:[-90f,0f,0f]},Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[90f,0.0f],DisabledSlots:65536}
+
+execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_tears"}} run summon armor_stand ~.55 ~-1.025 ~-.4 {ShowArms:1b,equipment:{offhand:{id:"minecraft:music_disc_tears",count:1b,components:{custom_data:{VanillaRefreshClear:1}}}},Tags:["refresh_discinsert"],Pose:{LeftArm:[-90f,0f,0f]},Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[90f,0.0f],DisabledSlots:65536}
+
+execute if block ~ ~ ~ jukebox{RecordItem:{id:"minecraft:music_disc_lava_chicken"}} run summon armor_stand ~.55 ~-1.025 ~-.4 {ShowArms:1b,equipment:{offhand:{id:"minecraft:music_disc_lava_chicken",count:1b,components:{custom_data:{VanillaRefreshClear:1}}}},Tags:["refresh_discinsert"],Pose:{LeftArm:[-90f,0f,0f]},Invisible:1b,Invulnerable:1b,NoGravity:1b,NoBasePlate:1b,Rotation:[90f,0.0f],DisabledSlots:65536}

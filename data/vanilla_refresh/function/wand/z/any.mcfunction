@@ -1,4 +1,8 @@
 
+execute unless entity @s[tag=refresh_operator] run advancement revoke @s from vanilla_refresh:wand/brush_cookie
+execute unless entity @s[tag=refresh_operator] run return fail
+
+
 tag @s add refresh_temp_usingwand
 
 execute as @s[advancements={vanilla_refresh:wand/brush_cookie=true}] anchored eyes positioned ^ ^ ^ run function vanilla_refresh:wand/z/brush_cookie

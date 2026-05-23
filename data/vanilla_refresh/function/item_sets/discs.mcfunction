@@ -10,7 +10,7 @@ give @s minecraft:music_disc_mall
 give @s minecraft:music_disc_mellohi
 
 
-give @s iron_sword 17
+give @s iron_sword 15
 
 
 give @s minecraft:music_disc_otherside
@@ -27,5 +27,7 @@ give @s minecraft:music_disc_creator
 give @s minecraft:music_disc_creator_music_box
 give @s minecraft:music_disc_precipice
 
+give @s music_disc_tears
+give @s music_disc_lava_chicken
 
 clear @s iron_sword

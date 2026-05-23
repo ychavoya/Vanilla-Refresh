@@ -15,13 +15,7 @@
               "min": 1
             }
           },
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "nbt": "{Tags:[\"refresh_operator\"]}"
-  }
-},
+
 
           {
             "condition": "minecraft:any_of",
@@ -64,7 +58,10 @@
       }
     }
   },
-  "rewards": {
+  
+
+  "parent": "vanilla_refresh:wand/brush_cookie",
+"rewards": {
     "function": "vanilla_refresh:wand/z/any"
   }
 }

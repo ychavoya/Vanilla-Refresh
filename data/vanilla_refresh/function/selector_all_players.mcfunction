@@ -20,7 +20,7 @@ execute if data storage vanilla_refresh_config:config config{healthsound:1} if e
     #get rotation[1] every 2 ticks
     execute if data storage vanilla_refresh_config:config config{sitting:1} if score 2tick refresh_clock matches 1 if entity @s[predicate=vanilla_refresh:condition/sneaking] store result score @s refresh_player_facing run data get entity @s Rotation[1]
 
-    execute if data storage vanilla_refresh_config:config config{sitting:1} if entity @s[scores={refresh_player_facing=88..90},predicate=vanilla_refresh:condition/sneaking] run function vanilla_refresh:player/sit/sit
+    execute if data storage vanilla_refresh_config:config config{sitting:1} if entity @s[scores={refresh_player_facing=88..90},predicate=vanilla_refresh:condition/sneaking] unless score @s refresh_player_sit matches 1.. run function vanilla_refresh:player/sit/sit
     execute if data storage vanilla_refresh_config:config config{sitting:1} if entity @s[predicate=!vanilla_refresh:condition/sneaking] run scoreboard players reset @s refresh_player_sit
 
 

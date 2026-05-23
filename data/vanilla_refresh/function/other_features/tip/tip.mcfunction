@@ -1,5 +1,5 @@
 
-execute store result score tempScore refresh_randomizer_output run random value 0..98
+execute store result score tempScore refresh_randomizer_output run random value 0..101
 
 tellraw @a[tag=refresh_debug] [{"translate":"[Vanilla Refresh: Displayed tip ","color": "gray","italic": true},{"score":{"objective": "refresh_randomizer_output","name": "tempScore"}},{"translate":" in chat]"}]
 
@@ -210,4 +210,10 @@ execute if score tempScore refresh_randomizer_output matches 97 run tellraw @a [
 
 execute if score tempScore refresh_randomizer_output matches 98 run tellraw @a [{"translate": "Tip: - Lead multiple chest boats together to carry all your storage across the ocean","color": "yellow"}]
 
+execute if score tempScore refresh_randomizer_output matches 101 run tellraw @a [{"translate": "Tip: - Crops placed diagonally from the same type of crop grow two times slower","color": "yellow"}]
 
+
+
+execute if score tempScore refresh_randomizer_output matches 99 run tellraw @a [{"translate": "Tip: - Dried ghasts, obtained from piglin bartering or soul sand valleys, can be made happy by placing them in water.","color": "yellow"}]
+
+execute if score tempScore refresh_randomizer_output matches 100 run tellraw @a [{"translate": "Tip: - Boats and chest boats can be attached with a lead to happy ghasts","color": "yellow"}]

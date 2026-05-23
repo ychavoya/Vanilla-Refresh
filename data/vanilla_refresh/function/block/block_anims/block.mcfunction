@@ -1,5 +1,5 @@
-execute unless data storage vanilla_refresh_config:config config{blockanims_jukebox:0} as @e[type=marker,tag=refresh_entity_blockanim_jukebox] at @s if entity @p[distance=..32] run function vanilla_refresh:block/block_anims/jukebox/anim
-execute unless data storage vanilla_refresh_config:config config{blockanims_beacon:0} as @e[type=marker,tag=refresh_entity_blockanim_beacon] at @s if entity @p[distance=..32] run function vanilla_refresh:block/block_anims/beacon/anim
+
+execute unless data storage vanilla_refresh_config:config config{blockanims_beacon:0} as @e[type=marker,tag=refresh_entity_blockanim_beacon] at @s if entity @p[distance=..96] run function vanilla_refresh:block/block_anims/beacon/a_main
 execute unless data storage vanilla_refresh_config:config config{blockanims_witherskull:0} as @e[type=marker,tag=refresh_entity_blockanim_witherskull] at @s if entity @p[distance=..32] run function vanilla_refresh:block/block_anims/witherskull/anim
 execute unless data storage vanilla_refresh_config:config config{blockanims_brewing:0} as @e[type=marker,tag=refresh_entity_blockanim_brewing_stand] at @s if entity @p[distance=..32] run function vanilla_refresh:block/block_anims/brewing_stand/anim
 execute unless data storage vanilla_refresh_config:config config{blockanims_enchant:0} as @e[type=marker,tag=refresh_entity_blockanim_enchanting_table] at @s if entity @p[distance=..32] run function vanilla_refresh:block/block_anims/enchanting_table/anim

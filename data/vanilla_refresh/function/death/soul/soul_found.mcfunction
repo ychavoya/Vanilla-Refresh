@@ -60,7 +60,7 @@ execute if score @s refresh_count matches 105 run tellraw @a[tag=refresh_debug] 
 
 
 
-execute if score @s refresh_count matches 100..104 run particle flash ~ ~ ~ 0 0 0 0 4 force @a[distance=..128]
+execute if score @s refresh_count matches 100..104 run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0 0 0 0 4 force @a[distance=..128]
 
 
 execute if score @s refresh_count matches 100..130 as @a[distance=..32] if score @s refresh_uuid1 = @n[type=marker,tag=refresh_entity_playersoul] refresh_uuid1 if score @s refresh_uuid2 = @n[type=marker,tag=refresh_entity_playersoul] refresh_uuid2 if score @s refresh_uuid3 = @n[type=marker,tag=refresh_entity_playersoul] refresh_uuid3 if score @s refresh_uuid4 = @n[type=marker,tag=refresh_entity_playersoul] refresh_uuid4 at @s run particle sculk_soul ~ ~1 ~ 0 0 0 .06 1 force @a[distance=..128]

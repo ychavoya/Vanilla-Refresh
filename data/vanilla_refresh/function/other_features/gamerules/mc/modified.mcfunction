@@ -4,147 +4,157 @@ tellraw @s [{"text": " "}]
 function vanilla_refresh:other_features/gamerules/mc/modified_check
 
 
-execute unless score announceAdvancements refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Announce Advancements: "},{"score":{"name": "announceAdvancements","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:show_advancement_messages refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Announce Advancements: "},{"score":{"name": "minecraft:show_advancement_messages","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score allowFireTicksAwayFromPlayer refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Allow Fire Ticks Away From Players: "},{"score":{"name": "allowFireTicksAwayFromPlayer","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:command_block_output refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Command Block Output: "},{"score":{"name": "minecraft:command_block_output","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score commandBlockOutput refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Command Block Output: "},{"score":{"name": "commandBlockOutput","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:elytra_movement_check refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Elytra Check: "},{"score":{"name": "minecraft:elytra_movement_check","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score disableElytraMovementCheck refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Disable Elytra Check: "},{"score":{"name": "disableElytraMovementCheck","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:raids refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Raids: "},{"score":{"name": "minecraft:raids","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score disableRaids refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Disable Raids: "},{"score":{"name": "disableRaids","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:advance_time refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Daylight Cycle: "},{"score":{"name": "minecraft:advance_time","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doDaylightCycle refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Daylight Cycle: "},{"score":{"name": "doDaylightCycle","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:entity_drops refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Entity Drops: "},{"score":{"name": "minecraft:entity_drops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doEntityDrops refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Entity Drops: "},{"score":{"name": "doEntityDrops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score spawnChunkRadius refresh_gamerules matches 2 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Spawn Chunk Radius: "},{"score":{"name": "spawnChunkRadius","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
+execute unless score minecraft:fire_spread_radius_around_player refresh_gamerules matches 128 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Fire Spread Radius Around Player: "},{"score":{"name": "minecraft:fire_spread_radius_around_player","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doFireTick refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Fire Tick: "},{"score":{"name": "doFireTick","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:immediate_respawn refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Immediate Respawn: "},{"score":{"name": "minecraft:immediate_respawn","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doImmediateRespawn refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Immediate Respawn: "},{"score":{"name": "doImmediateRespawn","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:spawn_phantoms refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Insomnia/Phantoms: "},{"score":{"name": "minecraft:spawn_phantoms","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doInsomnia refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Insomnia/Phantoms: "},{"score":{"name": "doInsomnia","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:limited_crafting refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Limited Crafting: "},{"score":{"name": "minecraft:limited_crafting","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doLimitedCrafting refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Limited Crafting: "},{"score":{"name": "doLimitedCrafting","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:mob_drops refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Loot: "},{"score":{"name": "minecraft:mob_drops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doMobLoot refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Loot: "},{"score":{"name": "doMobLoot","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:spawn_mobs refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Spawning: "},{"score":{"name": "minecraft:spawn_mobs","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doMobSpawning refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Spawning: "},{"score":{"name": "doMobSpawning","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:spawn_patrols refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Patrol Spawning: "},{"score":{"name": "minecraft:spawn_patrols","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doPatrolSpawning refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Patrol Spawning: "},{"score":{"name": "doPatrolSpawning","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:block_drops refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Tile Drops: "},{"score":{"name": "minecraft:block_drops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doTileDrops refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Tile Drops: "},{"score":{"name": "doTileDrops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
 
 
 
+execute unless score minecraft:spawn_wandering_traders refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Trader Spawning: "},{"score":{"name": "minecraft:spawn_wandering_traders","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
+execute unless score minecraft:spawn_wardens refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Warden Spawning: "},{"score":{"name": "minecraft:spawn_wardens","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doTraderSpawning refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Trader Spawning: "},{"score":{"name": "doTraderSpawning","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:advance_weather refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Weather Cycle: "},{"score":{"name": "minecraft:advance_weather","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doWardenSpawning refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Warden Spawning: "},{"score":{"name": "doWardenSpawning","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:drowning_damage refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Drowning Damage: "},{"score":{"name": "minecraft:drowning_damage","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doWeatherCycle refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Weather Cycle: "},{"score":{"name": "doWeatherCycle","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:fall_damage refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Fall Damage: "},{"score":{"name": "minecraft:fall_damage","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score drowningDamage refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Drowning Damage: "},{"score":{"name": "drowningDamage","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:fire_damage refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Fire Damage: "},{"score":{"name": "minecraft:fire_damage","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score fallDamage refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Fall Damage: "},{"score":{"name": "fallDamage","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:forgive_dead_players refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Forgive Dead Players: "},{"score":{"name": "minecraft:forgive_dead_players","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score fireDamage refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Fire Damage: "},{"score":{"name": "fireDamage","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:freeze_damage refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Freeze Damage: "},{"score":{"name": "minecraft:freeze_damage","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score forgiveDeadPlayers refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Forgive Dead Players: "},{"score":{"name": "forgiveDeadPlayers","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score freezeDamage refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Freeze Damage: "},{"score":{"name": "freezeDamage","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
 
 
 
 
+execute unless score minecraft:keep_inventory refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Keep Inventory: "},{"score":{"name": "minecraft:keep_inventory","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
+execute unless score minecraft:log_admin_commands refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Log Admin Commands: "},{"score":{"name": "minecraft:log_admin_commands","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score keepInventory refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Keep Inventory: "},{"score":{"name": "keepInventory","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:max_command_sequence_length refresh_gamerules matches 65536 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Max Command Chain Length: "},{"score":{"name": "minecraft:max_command_sequence_length","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score logAdminCommands refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Log Admin Commands: "},{"score":{"name": "logAdminCommands","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:max_entity_cramming refresh_gamerules matches 24 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Max Entity Craming: "},{"score":{"name": "minecraft:max_entity_cramming","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score maxCommandChainLength refresh_gamerules matches 65536 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Max Command Chain Length: "},{"score":{"name": "maxCommandChainLength","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:mob_griefing refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Griefing: "},{"score":{"name": "minecraft:mob_griefing","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score maxEntityCramming refresh_gamerules matches 24 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Max Entity Craming: "},{"score":{"name": "maxEntityCramming","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:natural_health_regeneration refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Natural Regeneration: "},{"score":{"name": "minecraft:natural_health_regeneration","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score mobGriefing refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Griefing: "},{"score":{"name": "mobGriefing","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:players_sleeping_percentage refresh_gamerules matches 100 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Player Sleeping Percent: "},{"score":{"name": "minecraft:players_sleeping_percentage","objective": "refresh_gamerules"},"color": "#c2c2c2"},{"translate": "%","color": "#c2c2c2"}]
 
-execute unless score naturalRegeneration refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Natural Regeneration: "},{"score":{"name": "naturalRegeneration","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:random_tick_speed refresh_gamerules matches 3 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Random Tick Speed: "},{"score":{"name": "minecraft:random_tick_speed","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score playersSleepingPercentage refresh_gamerules matches 100 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Player Sleeping Percent: "},{"score":{"name": "playersSleepingPercentage","objective": "refresh_gamerules"},"color": "#c2c2c2"},{"translate": "%","color": "#c2c2c2"}]
 
-execute unless score randomTickSpeed refresh_gamerules matches 3 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Random Tick Speed: "},{"score":{"name": "randomTickSpeed","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
 
 
 
+execute unless score minecraft:reduced_debug_info refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Reduced Debug Info: "},{"score":{"name": "minecraft:reduced_debug_info","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
+execute unless score minecraft:send_command_feedback refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Send Command Feedback: "},{"score":{"name": "minecraft:send_command_feedback","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score reducedDebugInfo refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Reduced Debug Info: "},{"score":{"name": "reducedDebugInfo","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:show_death_messages refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Show Death Messages: "},{"score":{"name": "minecraft:show_death_messages","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score sendCommandFeedback refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Send Command Feedback: "},{"score":{"name": "sendCommandFeedback","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:respawn_radius refresh_gamerules matches 10 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"World Spawn Radius: "},{"score":{"name": "minecraft:respawn_radius","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score showDeathMessages refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Show Death Messages: "},{"score":{"name": "showDeathMessages","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:spectators_generate_chunks refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Spectators Generate Chunks: "},{"score":{"name": "minecraft:spectators_generate_chunks","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score spawnRadius refresh_gamerules matches 10 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"World Spawn Radius: "},{"score":{"name": "spawnRadius","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:universal_anger refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Universal Anger: "},{"score":{"name": "minecraft:universal_anger","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score spectatorsGenerateChunks refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Spectators Generate Chunks: "},{"score":{"name": "spectatorsGenerateChunks","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:global_sound_events refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Global Sound Events: "},{"score":{"name": "minecraft:global_sound_events","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score universalAnger refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Universal Anger: "},{"score":{"name": "universalAnger","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:lava_source_conversion refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Lava Source Conversion: "},{"score":{"name": "minecraft:lava_source_conversion","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score globalSoundEvents refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Global Sound Events: "},{"score":{"name": "globalSoundEvents","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score lavaSourceConversion refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Lava Source Conversion: "},{"score":{"name": "lavaSourceConversion","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
+execute unless score minecraft:water_source_conversion refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Water Source Conversion: "},{"score":{"name": "minecraft:water_source_conversion","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
+execute unless score minecraft:max_snow_accumulation_height refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Snow Accumulation Height: "},{"score":{"name": "minecraft:max_snow_accumulation_height","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score waterSourceConversion refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Water Source Conversion: "},{"score":{"name": "waterSourceConversion","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:mob_explosion_drop_decay refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Explosion Drop Decay: "},{"score":{"name": "minecraft:mob_explosion_drop_decay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score snowAccumulationHeight refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Snow Accumulation Height: "},{"score":{"name": "snowAccumulationHeight","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:block_explosion_drop_decay refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Block Explosion Drop Decay: "},{"score":{"name": "minecraft:block_explosion_drop_decay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score mobExplosionDropDecay refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Explosion Drop Decay: "},{"score":{"name": "mobExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:tnt_explosion_drop_decay refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"TNT Explosion Drop Decay: "},{"score":{"name": "minecraft:tnt_explosion_drop_decay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score blockExplosionDropDecay refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Block Explosion Drop Decay: "},{"score":{"name": "blockExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:tnt_explodes refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"TNT Explodes: "},{"score":{"name": "minecraft:tnt_explodes","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score tntExplosionDropDecay refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"TNT Explosion Drop Decay: "},{"score":{"name": "tntExplosionDropDecay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:spread_vines refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Do Vines Spread: "},{"score":{"name": "minecraft:spread_vines","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score tntExplodes refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"TNT Explodes: "},{"score":{"name": "tntExplodes","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:max_block_modifications refresh_gamerules matches 32768 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Command Modification Block Limit: "},{"score":{"name": "minecraft:max_block_modifications","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doVinesSpread refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Do Vines Spread: "},{"score":{"name": "doVinesSpread","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:ender_pearls_vanish_on_death refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Ender Pearls Vanish on Death: "},{"score":{"name": "minecraft:ender_pearls_vanish_on_death","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score commandModificationBlockLimit refresh_gamerules matches 32768 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Command Modification Block Limit: "},{"score":{"name": "commandModificationBlockLimit","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score enderPearlsVanishOnDeath refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Ender Pearls Vanish on Death: "},{"score":{"name": "enderPearlsVanishOnDeath","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
 
+execute unless score minecraft:projectiles_can_break_blocks refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Projecties Can Break Blocks: "},{"score":{"name": "minecraft:projectiles_can_break_blocks","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
+execute unless score minecraft:players_nether_portal_default_delay refresh_gamerules matches 80 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Nether Portal Travel Delay: "},{"score":{"name": "minecraft:players_nether_portal_default_delay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score projectilesCanBreakBlocks refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Projecties Can Break Blocks: "},{"score":{"name": "projectilesCanBreakBlocks","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:players_nether_portal_creative_delay refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Nether Portal Creative Travel Delay: "},{"score":{"name": "minecraft:players_nether_portal_creative_delay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score playersNetherPortalDefaultDelay refresh_gamerules matches 80 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Nether Portal Travel Delay: "},{"score":{"name": "playersNetherPortalDefaultDelay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:max_command_forks refresh_gamerules matches 65536 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Max Command Fork Count: "},{"score":{"name": "minecraft:max_command_forks","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score playersNetherPortalCreativeDelay refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Nether Portal Creative Travel Delay: "},{"score":{"name": "playersNetherPortalCreativeDelay","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+execute unless score minecraft:locator_bar refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Locator Bar: "},{"score":{"name": "minecraft:locator_bar","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score maxCommandForkCount refresh_gamerules matches 65536 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Max Command Fork Count: "},{"score":{"name": "maxCommandForkCount","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+
+execute unless score minecraft:pvp refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"PVP: "},{"score":{"name": "minecraft:pvp","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+
+
+execute unless score minecraft:spawn_monsters refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Spawn Monsters: "},{"score":{"name": "minecraft:spawn_monsters","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+
+
+execute unless score minecraft:allow_entering_nether_using_portals refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Allow Entering Nether Using Portals: "},{"score":{"name": "minecraft:allow_entering_nether_using_portals","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+
+
+execute unless score minecraft:command_blocks_work refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "gray"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Command Blocks Work: "},{"score":{"name": "minecraft:command_blocks_work","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
 

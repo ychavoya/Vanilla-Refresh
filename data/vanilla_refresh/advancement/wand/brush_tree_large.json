@@ -16,13 +16,7 @@
               "min": 1
             }
           },
-{
-  "condition": "minecraft:entity_properties",
-  "entity": "this",
-  "predicate": {
-    "nbt": "{Tags:[\"refresh_operator\"]}"
-  }
-},
+
 
 
           {
@@ -66,7 +60,10 @@
       }
     }
   },
-  "rewards": {
+  
+
+  "parent": "vanilla_refresh:wand/brush_cookie",
+"rewards": {
     "function": "vanilla_refresh:wand/z/any"
   },
 "#x_rewards": {

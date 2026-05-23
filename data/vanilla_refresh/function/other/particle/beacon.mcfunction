@@ -1,6 +1,5 @@
 scoreboard players add @s refresh_count 1
 
-execute if score @s refresh_count matches 1 run particle end_rod ~ ~ ~ 0 0 0 .1 8 force @a[distance=..192]
 
 
 particle end_rod ^ ^ ^-.4 0 0 0 0 1 force @a[distance=..192]

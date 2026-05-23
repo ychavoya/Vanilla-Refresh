@@ -1,7 +1,7 @@
 scoreboard players add @s refresh_count 1
 
 
-execute if score @s refresh_count matches 340..341 run particle flash ~ ~ ~ 0 0 0 .3 3 force @a[distance=..128]
+execute if score @s refresh_count matches 340..341 run particle flash{color:[1.000,1.000,1.000,1.00]} ~ ~ ~ 0 0 0 .3 3 force @a[distance=..128]
 
 execute if score @s refresh_count matches 311 run playsound entity.zombie_villager.converted block @a[distance=..64] ~ ~ ~ 4 .65
 execute if score @s refresh_count matches 341 run function vanilla_refresh:death/soul/shatter_end

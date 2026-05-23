@@ -12,6 +12,7 @@ execute as @s[advancements={vanilla_refresh:death/blaze_king=true}] at @a run fu
 execute as @s[advancements={vanilla_refresh:death/shulkerstone=true}] at @a run function vanilla_refresh:death/sound/shulkerstone
 execute as @s[advancements={vanilla_refresh:death/hovering_inferno=true}] at @a run function vanilla_refresh:death/sound/hovering_inferno
 
+execute as @s[advancements={vanilla_refresh:death/spear=true}] at @a run function vanilla_refresh:death/sound/spear
 execute as @s[advancements={vanilla_refresh:death/axe=true}] at @a run function vanilla_refresh:death/sound/axe
 execute as @s[advancements={vanilla_refresh:death/trident=true}] at @a run function vanilla_refresh:death/sound/trident
 execute as @s[advancements={vanilla_refresh:death/arrow=true}] at @a run function vanilla_refresh:death/sound/arrow

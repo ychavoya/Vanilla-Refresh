@@ -1,5 +1,4 @@
-
-execute at @e[type=marker,tag=refresh_worldspawn,limit=1] run tp @s ~ ~ ~
+tag @s add refresh_teleport_to_world_spawn
 
 execute at @s run playsound block.beacon.activate player @s ~ ~ ~ 100 1
 

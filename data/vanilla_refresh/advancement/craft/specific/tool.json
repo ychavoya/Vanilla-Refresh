@@ -3,6 +3,98 @@
 
 
 
+     "wooden_spear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "wooden_spear"
+      }
+    },
+     "stone_spear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "stone_spear"
+      }
+    },
+    "copper_spear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_spear"
+      }
+    },
+     "iron_spear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "iron_spear"
+      }
+    },
+     "golden_spear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "golden_spear"
+      }
+    },
+     "diamond_spear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "diamond_spear"
+      }
+    },
+    "copper_axe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_axe"
+      }
+    },
+    "copper_pickaxe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_pickaxe"
+      }
+    },
+    "copper_shovel": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_shovel"
+      }
+    },
+    "copper_sword": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_sword"
+      }
+    },
+    
+    "copper_hoe": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_hoe"
+      }
+    },
+    "copper_boots": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_boots"
+      }
+    },
+    
+    "copper_leggings": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_leggings"
+      }
+    },
+    "copper_chestplate": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_chestplate"
+      }
+    },
+    "copper_helmet": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "copper_helmet"
+      }
+    },
     "wolf_armor": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
@@ -292,6 +384,16 @@
   },
   "requirements": [
     [
+ "copper_axe",
+      "copper_pickaxe",
+      "copper_sword",
+      "copper_hoe",
+      "copper_shovel",
+      "copper_chestplate",
+      "copper_leggings",
+      "copper_boots",
+      "copper_helmet",
+      "copper_spear",
 
       "wolf_armor",
       "turtle_helmet",
@@ -311,12 +413,14 @@
       "wooden_sword",
       "wooden_hoe",
       "wooden_shovel",
+      "wooden_spear",
 
       "stone_axe",
       "stone_pickaxe",
       "stone_sword",
       "stone_hoe",
       "stone_shovel",
+      "stone_spear",
 
       "golden_axe",
       "golden_pickaxe",
@@ -327,6 +431,7 @@
       "golden_leggings",
       "golden_boots",
       "golden_helmet",
+      "golden_spear",
 
       "iron_axe",
       "iron_pickaxe",
@@ -337,6 +442,7 @@
       "iron_leggings",
       "iron_boots",
       "iron_helmet",
+      "iron_spear",
 
       "diamond_axe",
       "diamond_pickaxe",
@@ -346,7 +452,8 @@
       "diamond_chestplate",
       "diamond_leggings",
       "diamond_boots",
-      "diamond_helmet"
+      "diamond_helmet",
+      "diamond_spear"
      
     ]
   ],

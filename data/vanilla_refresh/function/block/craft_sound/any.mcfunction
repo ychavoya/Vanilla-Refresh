@@ -9,6 +9,9 @@ execute if entity @s[advancements={vanilla_refresh:craft/specific/diamond=true}]
 #iron tools
 execute if entity @s[advancements={vanilla_refresh:craft/specific/tool_iron=true}] run function vanilla_refresh:block/craft_sound/specific/tool_iron
 
+#copper tools
+execute if entity @s[advancements={vanilla_refresh:craft/specific/tool_copper=true}] run function vanilla_refresh:block/craft_sound/specific/tool_copper
+
 #netherite ingot
 execute if entity @s[advancements={vanilla_refresh:craft/specific/netherite=true}] run function vanilla_refresh:block/craft_sound/specific/netherite
 

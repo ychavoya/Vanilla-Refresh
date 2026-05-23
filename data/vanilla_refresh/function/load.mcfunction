@@ -1,5 +1,5 @@
 
-execute unless data storage vanilla_refresh_config:config config{load_message:0} unless score load_message refresh_settings matches ..0 run tellraw @a [{"translate": "Successfully loaded ","color": "gray"},{"translate": "Vanilla Refresh v1.4.27g","color": "green"}]
+execute if data storage vanilla_refresh_config:config config{load_message:1} unless score load_message refresh_settings matches ..0 run tellraw @a [{"translate": "Successfully loaded ","color": "gray"},{"translate": "Vanilla Refresh v1.4.31","color": "green"}]
 
 ### Pack Installed
 
@@ -8,8 +8,6 @@ scoreboard players set VanillaRefresh splatus.packs_installed 1
 
 ###
 
-kill @e[type=marker,tag=refresh_worldspawn]
-summon marker ~ ~ ~ {Tags:["refresh_worldspawn"]}
 
 
 
@@ -281,4 +279,4 @@ schedule function vanilla_refresh:other/check_installs 1t
 #execute as @a run function vanilla_refresh:player/first_join_stats
 
 execute if data storage vanilla_refresh_config:config config{gamerules:1} run function vanilla_refresh:other_features/gamerules/update
-execute store result score keepInventory refresh_gamerules run gamerule keepInventory
+execute store result score minecraft:keep_inventory refresh_gamerules run gamerule minecraft:keep_inventory

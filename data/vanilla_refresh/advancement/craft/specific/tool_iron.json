@@ -25,6 +25,12 @@
         "recipe_id": "iron_sword"
       }
     },
+    "iron_spear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "iron_spear"
+      }
+    },
     
     "iron_hoe": {
       "trigger": "minecraft:recipe_crafted",
@@ -62,6 +68,12 @@
       "conditions": {
         "recipe_id": "shield"
       }
+    },
+    "bucket": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "bucket"
+      }
     }
   },
   "requirements": [
@@ -69,13 +81,15 @@
       "iron_axe",
       "iron_pickaxe",
       "iron_sword",
+      "iron_spear",
       "iron_hoe",
       "iron_shovel",
       "iron_chestplate",
       "iron_leggings",
       "iron_boots",
       "iron_helmet",
-      "shield"
+      "shield",
+      "bucket"
      
     ]
   ],

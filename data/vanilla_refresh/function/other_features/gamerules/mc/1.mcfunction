@@ -12,26 +12,21 @@ tellraw @s [{"text": " "}]
 #tellraw @s [{"text": " "}]
 
 
-execute unless score announceAdvancements refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Announce Advancements: "},{"score":{"name": "announceAdvancements","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score announceAdvancements refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Announce Advancements: "},{"score":{"name": "announceAdvancements","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"PVP: "},{"score":{"name": "minecraft:pvp","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score commandBlockOutput refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Command Block Output: "},{"score":{"name": "commandBlockOutput","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score commandBlockOutput refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Command Block Output: "},{"score":{"name": "commandBlockOutput","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Spawn Monsters: "},{"score":{"name": "minecraft:spawn_monsters","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score disableElytraMovementCheck refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Disable Elytra Check: "},{"score":{"name": "disableElytraMovementCheck","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score disableElytraMovementCheck refresh_gamerules matches 0 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Disable Elytra Check: "},{"score":{"name": "disableElytraMovementCheck","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Announce Advancements: "},{"score":{"name": "minecraft:show_advancement_messages","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score disableRaids refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Disable Raids: "},{"score":{"name": "disableRaids","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score disableRaids refresh_gamerules matches 0 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Disable Raids: "},{"score":{"name": "disableRaids","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Command Block Output: "},{"score":{"name": "minecraft:command_block_output","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doDaylightCycle refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Daylight Cycle: "},{"score":{"name": "doDaylightCycle","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doDaylightCycle refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Daylight Cycle: "},{"score":{"name": "doDaylightCycle","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Elytra Check: "},{"score":{"name": "minecraft:elytra_movement_check","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doEntityDrops refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Entity Drops: "},{"score":{"name": "doEntityDrops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doEntityDrops refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Entity Drops: "},{"score":{"name": "doEntityDrops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Raids: "},{"score":{"name": "minecraft:raids","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score spawnChunkRadius refresh_gamerules matches 2 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","bold": true},{"translate":"Spawn Chunk Radius: "},{"score":{"name": "spawnChunkRadius","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score spawnChunkRadius refresh_gamerules matches 2 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Spawn Chunk Radius: "},{"score":{"name": "spawnChunkRadius","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Daylight Cycle: "},{"score":{"name": "minecraft:advance_time","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Entity Drops: "},{"score":{"name": "minecraft:entity_drops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
 

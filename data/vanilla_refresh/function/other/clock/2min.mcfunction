@@ -4,7 +4,7 @@
 execute if data storage vanilla_refresh_config:config config{tips_mc:1} run function vanilla_refresh:other_features/tip/root
 
 execute if data storage vanilla_refresh_config:config config{gamerules:1} run function vanilla_refresh:other_features/gamerules/update
-execute store result score keepInventory refresh_gamerules run gamerule keepInventory
+execute store result score minecraft:keep_inventory refresh_gamerules run gamerule minecraft:keep_inventory
 
 
 scoreboard players set 2min refresh_clock 0

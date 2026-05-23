@@ -5,7 +5,7 @@ playsound minecraft:block.amethyst_block.place block @a[distance=..20] ~ ~ ~ .25
 playsound minecraft:block.amethyst_block.chime block @a[distance=..20] ~ ~ ~ 1 .55
 playsound minecraft:block.amethyst_block.chime block @a[distance=..20] ~ ~ ~ 1 1.1
 particle end_rod ~ ~ ~ .4 .4 .4 .02 12 force @a[distance=..32]
-execute positioned ~ ~-.4 ~ rotated ~ 0 run function vanilla_refresh:block/block_anims/beacon/wave_particle
+execute positioned ~ ~-.4 ~ rotated ~ 0 run function vanilla_refresh:block/block_anims/beacon/wave_particle3_init
 
 tag @s add refresh_entity_blockanim_beacon_placed
 

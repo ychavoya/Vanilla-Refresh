@@ -2,37 +2,33 @@
 tellraw @s [{"text": " "} ]
 
 
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Allow Entering Nether Using Portals: "},{"score":{"name": "minecraft:allow_entering_nether_using_portals","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
-execute unless score doFireTick refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Fire Tick: "},{"score":{"name": "doFireTick","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doFireTick refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Fire Tick: "},{"score":{"name": "doFireTick","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-
-
-execute unless score doImmediateRespawn refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Immediate Respawn: "},{"score":{"name": "doImmediateRespawn","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doImmediateRespawn refresh_gamerules matches 0 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Immediate Respawn: "},{"score":{"name": "doImmediateRespawn","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Command Blocks Work: "},{"score":{"name": "minecraft:command_blocks_work","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doInsomnia refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Insomnia/Phantoms: "},{"score":{"name": "doInsomnia","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doInsomnia refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Insomnia/Phantoms: "},{"score":{"name": "doInsomnia","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Fire Spread Radius Around Player: "},{"score":{"name": "minecraft:fire_spread_radius_around_player","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doLimitedCrafting refresh_gamerules matches 0 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Limited Crafting: "},{"score":{"name": "doLimitedCrafting","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doLimitedCrafting refresh_gamerules matches 0 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Limited Crafting: "},{"score":{"name": "doLimitedCrafting","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Immediate Respawn: "},{"score":{"name": "minecraft:immediate_respawn","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doMobLoot refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Loot: "},{"score":{"name": "doMobLoot","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doMobLoot refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Mob Loot: "},{"score":{"name": "doMobLoot","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Insomnia/Phantoms: "},{"score":{"name": "minecraft:spawn_phantoms","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doMobSpawning refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Mob Spawning: "},{"score":{"name": "doMobSpawning","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doMobSpawning refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Mob Spawning: "},{"score":{"name": "doMobSpawning","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Limited Crafting: "},{"score":{"name": "minecraft:limited_crafting","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doPatrolSpawning refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Patrol Spawning: "},{"score":{"name": "doPatrolSpawning","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doPatrolSpawning refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Patrol Spawning: "},{"score":{"name": "doPatrolSpawning","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Mob Loot: "},{"score":{"name": "minecraft:mob_drops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
-execute unless score doTileDrops refresh_gamerules matches 1 run tellraw @s [{"translate": "","color": "aqua"},{"text":"+ ","color":"aqua","bold": true},{"translate":"Tile Drops: "},{"score":{"name": "doTileDrops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
-execute if score doTileDrops refresh_gamerules matches 1 run tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Tile Drops: "},{"score":{"name": "doTileDrops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Mob Spawning: "},{"score":{"name": "minecraft:spawn_mobs","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+
+
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Patrol Spawning: "},{"score":{"name": "minecraft:spawn_patrols","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
+
+
+tellraw @s [{"translate": "   ","color": "gray"},{"translate":"Tile Drops: "},{"score":{"name": "minecraft:block_drops","objective": "refresh_gamerules"},"color":"#c2c2c2" }]
 
 
 

@@ -2,7 +2,7 @@
 
 
 #boss
-execute if entity @e[distance=..128,type=ender_dragon,nbt=!{NoAI:1b}] run function vanilla_refresh:death/sound/ender_dragon
+execute if entity @e[distance=..128,typfe=ender_dragon,nbt=!{NoAI:1b}] run function vanilla_refresh:death/sound/ender_dragon
 execute as @s[advancements={vanilla_refresh:death/wither=true}] run function vanilla_refresh:death/sound/wither
 execute as @s[advancements={vanilla_refresh:death/ravager=true}] run function vanilla_refresh:death/sound/ravager
 execute as @s[advancements={vanilla_refresh:death/warden=true}] run function vanilla_refresh:death/sound/warden
@@ -12,6 +12,7 @@ execute as @s[advancements={vanilla_refresh:death/blaze_king=true}] run function
 execute as @s[advancements={vanilla_refresh:death/shulkerstone=true}] run function vanilla_refresh:death/sound/shulkerstone
 execute as @s[advancements={vanilla_refresh:death/hovering_inferno=true}] run function vanilla_refresh:death/sound/hovering_inferno
 
+execute as @s[advancements={vanilla_refresh:death/spear=true}] run function vanilla_refresh:death/sound/spear
 execute as @s[advancements={vanilla_refresh:death/axe=true}] run function vanilla_refresh:death/sound/axe
 execute as @s[advancements={vanilla_refresh:death/trident=true}] run function vanilla_refresh:death/sound/trident
 execute as @s[advancements={vanilla_refresh:death/arrow=true}] run function vanilla_refresh:death/sound/arrow

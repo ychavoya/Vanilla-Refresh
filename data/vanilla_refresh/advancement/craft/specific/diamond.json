@@ -90,6 +90,12 @@
         "recipe_id": "diamond_sword"
       }
     },
+    "diamond_spear": {
+      "trigger": "minecraft:recipe_crafted",
+      "conditions": {
+        "recipe_id": "diamond_spear"
+      }
+    },
     "end_crystal": {
       "trigger": "minecraft:recipe_crafted",
       "conditions": {
@@ -114,6 +120,7 @@
       "diamond_pickaxe",
       "diamond_shovel",
       "diamond_sword",
+      "diamond_spear",
       "end_crystal"
      
     ]

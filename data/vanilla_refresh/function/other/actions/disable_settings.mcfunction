@@ -157,7 +157,5 @@ data modify storage vanilla_refresh_config:config config.stoptime set value 0
 
 function vanilla_refresh:other/menus/main
 
-function vanilla_refresh:other/default_settings_storage
-
 playsound entity.experience_orb.pickup player @s ~ ~ ~ 0.6 1
 

@@ -1,5 +1,5 @@
 
-execute unless data storage vanilla_refresh_config:config config.load_message run data modify storage vanilla_refresh_config:config config.load_message set value 1
+execute unless data storage vanilla_refresh_config:config config.load_message run data modify storage vanilla_refresh_config:config config.load_message set value 0
 
 execute unless data storage vanilla_refresh_config:config config.sitting run data modify storage vanilla_refresh_config:config config.sitting set value 1
 
@@ -37,12 +37,18 @@ execute unless data storage vanilla_refresh_config:config config.witherhead run 
 execute unless data storage vanilla_refresh_config:config config.blockanims run data modify storage vanilla_refresh_config:config config.blockanims set value 1
 
 execute unless data storage vanilla_refresh_config:config config.blockanims_beacon run data modify storage vanilla_refresh_config:config config.blockanims_beacon set value 1
+execute unless data storage vanilla_refresh_config:config config.blockanims_beacon2 run data modify storage vanilla_refresh_config:config config.blockanims_beacon2 set value 1
 execute unless data storage vanilla_refresh_config:config config.blockanims_witherskull run data modify storage vanilla_refresh_config:config config.blockanims_witherskull set value 1
 execute unless data storage vanilla_refresh_config:config config.blockanims_brewing run data modify storage vanilla_refresh_config:config config.blockanims_brewing set value 1
 execute unless data storage vanilla_refresh_config:config config.blockanims_enchant run data modify storage vanilla_refresh_config:config config.blockanims_enchant set value 1
 execute unless data storage vanilla_refresh_config:config config.blockanims_dragonegg run data modify storage vanilla_refresh_config:config config.blockanims_dragonegg set value 1
 execute unless data storage vanilla_refresh_config:config config.blockanims_enderchest run data modify storage vanilla_refresh_config:config config.blockanims_enderchest set value 1
-execute unless data storage vanilla_refresh_config:config config.blockanims_disc run data modify storage vanilla_refresh_config:config config.blockanims_disc set value 1
+execute unless data storage vanilla_refresh_config:config config.blockanims_jukebox run data modify storage vanilla_refresh_config:config config.blockanims_jukebox set value 1
+
+execute unless data storage vanilla_refresh_config:config config.blockanims_jukebox2 run data modify storage vanilla_refresh_config:config config.blockanims_jukebox2 set value 1
+execute unless data storage vanilla_refresh_config:config config.blockanims_jukebox3 run data modify storage vanilla_refresh_config:config config.blockanims_jukebox3 set value 1
+
+
 
 
 execute unless data storage vanilla_refresh_config:config config.grief_tnt run data modify storage vanilla_refresh_config:config config.grief_tnt set value 1
