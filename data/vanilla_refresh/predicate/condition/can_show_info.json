@@ -19,7 +19,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type": "minecraft:player"
+            "entity_type": "minecraft:player"
           }
         }
       ]
@@ -34,7 +34,7 @@
           "condition": "minecraft:entity_properties",
           "entity": "this",
           "predicate": {
-            "type": "#vanilla_refresh:misc_spyglass"
+            "entity_type": "#vanilla_refresh:misc_spyglass"
           }
         },
         {

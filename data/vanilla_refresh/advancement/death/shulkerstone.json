@@ -5,7 +5,7 @@
       "conditions": {
         "killing_blow": {
           "source_entity": {
-            "type": "minecraft:cow",
+            "entity_type": "minecraft:cow",
             "nbt": "{Tags:[\"shulkerstone\"]}"
           }
         }

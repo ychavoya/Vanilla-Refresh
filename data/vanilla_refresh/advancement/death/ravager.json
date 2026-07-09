@@ -5,7 +5,7 @@
       "conditions": {
         "killing_blow": {
           "source_entity": {
-            "type": "minecraft:ravager"
+            "entity_type": "minecraft:ravager"
           }
         }
       }

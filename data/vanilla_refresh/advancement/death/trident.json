@@ -5,7 +5,7 @@
       "conditions": {
         "killing_blow": {
           "direct_entity": {
-            "type": "minecraft:trident"
+            "entity_type": "minecraft:trident"
           }
         }
       }
