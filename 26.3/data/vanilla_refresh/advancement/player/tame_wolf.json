@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:tame_animal",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "entity_type": "minecraft:wolf"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "vanilla_refresh:entity/mob_health/wolf"
+  }
+}
+  

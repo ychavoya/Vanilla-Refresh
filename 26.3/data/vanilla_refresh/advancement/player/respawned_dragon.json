@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "summoned_dragon": {
+      "trigger": "minecraft:summoned_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "entity_type": "minecraft:ender_dragon"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "vanilla_refresh:entity/enderdragon/respawn"
+  }
+}
+  

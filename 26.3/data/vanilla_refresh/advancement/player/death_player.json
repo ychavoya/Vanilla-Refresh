@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:entity_killed_player",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:entity_properties",
+          "entity": "this",
+          "entity_type": "player"
+        }
+      }
+    }
+  }
+}
