@@ -21,6 +21,8 @@
     {"id":"minecraft:crimson_fungus","required": false},
     {"id":"minecraft:brown_mushroom","required": false},
     {"id":"minecraft:red_mushroom","required": false},
+    {"id":"minecraft:shelf_mushroom","required": false},
+    {"id":"minecraft:red_shrub","required": false},
     {"id":"minecraft:nether_sprouts","required": false},
     {"id":"minecraft:hanging_roots","required": false},
     {"id":"minecraft:small_dripleaf","required": false},

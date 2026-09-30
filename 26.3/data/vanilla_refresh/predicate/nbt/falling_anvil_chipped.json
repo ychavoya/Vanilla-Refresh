@@ -5,9 +5,15 @@
       "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{BlockState:{Name:\"minecraft:chipped_anvil\"}}"
+        "nbt": "{BlockState:{id:\"minecraft:chipped_anvil\"}}"
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{BlockState:\"minecraft:chipped_anvil\"}"
       }
     }
   ]
 }
-  

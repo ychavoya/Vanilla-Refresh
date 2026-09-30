@@ -42,7 +42,7 @@ tellraw @s [{"text": "   ","color": "gray"},{"translate":"Jungle","color":"#5ba3
 
 tellraw @s [{"text": " "}]
 
-tellraw @s [{"text": "   ","color": "gray"},{"translate":"Concrete","color":"#5ba3f5","underlined":true,"hover_event":{"action":"show_text","value":[{"translate":"Click to Give"}]},"click_event":{"action":"run_command","command":"/function vanilla_refresh:item_sets/color_concrete"}},{"text": "   ","color": "gray"},{"translate":"Pale Oak","color":"#5ba3f5","underlined":true,"hover_event":{"action":"show_text","value":[{"translate":"Click to Give"}]},"click_event":{"action":"run_command","command":"/function vanilla_refresh:item_sets/wood/pale_oak"}}]
+tellraw @s [{"text": "   ","color": "gray"},{"translate":"Concrete","color":"#5ba3f5","underlined":true,"hover_event":{"action":"show_text","value":[{"translate":"Click to Give"}]},"click_event":{"action":"run_command","command":"/function vanilla_refresh:item_sets/color_concrete"}},{"text": "   ","color": "gray"},{"translate":"Pale Oak","color":"#5ba3f5","underlined":true,"hover_event":{"action":"show_text","value":[{"translate":"Click to Give"}]},"click_event":{"action":"run_command","command":"/function vanilla_refresh:item_sets/wood/pale_oak"}},{"text": "   ","color": "gray"},{"translate":"Poplar","color":"#5ba3f5","underlined":true,"hover_event":{"action":"show_text","value":[{"translate":"Click to Give"}]},"click_event":{"action":"run_command","command":"/function vanilla_refresh:item_sets/wood/poplar"}}]
 
 
 

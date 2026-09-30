@@ -5,16 +5,15 @@
       "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{BlockState:{Properties:{facing:\"east\"}}}"
+        "nbt": "{BlockState:{properties:{facing:\"east\"}}}"
       }
     },
     {
       "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{BlockState:{Properties:{facing:\"west\"}}}"
+        "nbt": "{BlockState:{properties:{facing:\"west\"}}}"
       }
     }
   ]
 }
-  
