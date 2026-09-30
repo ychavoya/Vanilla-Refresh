@@ -5,16 +5,36 @@
       "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{BlockState:{Properties:{facing:\"north\"}}}"
+        "nbt": "{BlockState:{properties:{facing:\"north\"}}}"
       }
     },
     {
       "type": "minecraft:entity_properties",
       "entity": "this",
       "predicate": {
-        "nbt": "{BlockState:{Properties:{facing:\"south\"}}}"
+        "nbt": "{BlockState:{properties:{facing:\"south\"}}}"
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{BlockState:\"minecraft:anvil\"}"
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{BlockState:\"minecraft:chipped_anvil\"}"
+      }
+    },
+    {
+      "type": "minecraft:entity_properties",
+      "entity": "this",
+      "predicate": {
+        "nbt": "{BlockState:\"minecraft:damaged_anvil\"}"
       }
     }
   ]
 }
-  

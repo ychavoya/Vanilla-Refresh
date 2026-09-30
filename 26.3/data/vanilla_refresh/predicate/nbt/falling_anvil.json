@@ -1,27 +1,8 @@
 {
   "type": "minecraft:any_of",
   "terms": [
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{BlockState:{Name:\"minecraft:anvil\"}}"
-      }
-    },
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{BlockState:{Name:\"minecraft:chipped_anvil\"}}"
-      }
-    },
-    {
-      "type": "minecraft:entity_properties",
-      "entity": "this",
-      "predicate": {
-        "nbt": "{BlockState:{Name:\"minecraft:damaged_anvil\"}}"
-      }
-    }
+    "vanilla_refresh:nbt/falling_anvil_anvil",
+    "vanilla_refresh:nbt/falling_anvil_chipped",
+    "vanilla_refresh:nbt/falling_anvil_damaged"
   ]
 }
-  
