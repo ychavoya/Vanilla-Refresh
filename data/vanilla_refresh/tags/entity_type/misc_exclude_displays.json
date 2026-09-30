@@ -53,6 +53,7 @@
     {"id":"minecraft:dark_oak_boat","required": false},
     {"id":"minecraft:bamboo_raft","required": false},
     {"id":"minecraft:pale_oak_boat","required": false},
+    {"id":"minecraft:poplar_boat","required": false},
     {"id":"minecraft:mangrove_boat","required": false},
 
     {"id":"minecraft:oak_chest_boat","required": false},
@@ -64,11 +65,13 @@
     {"id":"minecraft:dark_oak_chest_boat","required": false},
     {"id":"minecraft:bamboo_chest_raft","required": false},
     {"id":"minecraft:pale_oak_chest_boat","required": false},
+    {"id":"minecraft:poplar_chest_boat","required": false},
     {"id":"minecraft:mangrove_chest_boat","required": false},
 
 
 
     {"id":"minecraft:painting","required": false},
+    {"id":"minecraft:cushion","required": false},
     
     {"id":"minecraft:ominous_item_spawner","required": false},
     {"id":"minecraft:wind_charge","required": false},

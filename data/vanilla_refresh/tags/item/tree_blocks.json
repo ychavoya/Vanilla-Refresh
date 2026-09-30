@@ -13,6 +13,8 @@
     {"id":"minecraft:mangrove_log","required": false},
     {"id":"minecraft:acacia_log","required": false},
     {"id":"minecraft:cherry_log","required": false},
+    {"id":"minecraft:pale_oak_log","required": false},
+    {"id":"minecraft:poplar_log","required": false},
     {"id":"minecraft:bamboo","required": false},
 
 
@@ -28,7 +30,11 @@
     {"id":"minecraft:azalea_leaves","required": false},
     {"id":"minecraft:cherry_leaves","required": false},
     {"id":"minecraft:pink_petals","required": false},
-    {"id":"minecraft:flowering_azalea_leaves","required": false}
+    {"id":"minecraft:flowering_azalea_leaves","required": false},
+    {"id":"minecraft:pale_oak_leaves","required": false},
+    {"id":"minecraft:red_poplar_leaves","required": false},
+    {"id":"minecraft:orange_poplar_leaves","required": false},
+    {"id":"minecraft:yellow_poplar_leaves","required": false}
     
   ]
 }
