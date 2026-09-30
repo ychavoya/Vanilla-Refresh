@@ -5,8 +5,7 @@
       "conditions": {
         "location": {
           "type": "minecraft:match_block",
-          "blocks": "minecraft:blast_furnace",
-          "properties": {}
+          "blocks": "minecraft:blast_furnace"
         }
       }
     }

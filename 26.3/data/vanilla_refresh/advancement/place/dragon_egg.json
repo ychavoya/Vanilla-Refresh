@@ -5,8 +5,7 @@
       "conditions": {
         "location": {
           "type": "minecraft:match_block",
-          "blocks": "minecraft:dragon_egg",
-          "properties": {}
+          "blocks": "minecraft:dragon_egg"
         }
       }
     }

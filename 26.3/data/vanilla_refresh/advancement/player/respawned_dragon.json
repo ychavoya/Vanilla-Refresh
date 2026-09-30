@@ -6,7 +6,9 @@
         "entity": {
           "type": "minecraft:entity_properties",
           "entity": "this",
-          "entity_type": "minecraft:ender_dragon"
+          "predicate": {
+            "entity_type": "minecraft:ender_dragon"
+          }
         }
       }
     }

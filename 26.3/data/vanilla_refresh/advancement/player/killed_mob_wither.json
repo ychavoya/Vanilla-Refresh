@@ -6,7 +6,9 @@
         "entity": {
           "type": "minecraft:entity_properties",
           "entity": "this",
-          "entity_type": "wither"
+          "predicate": {
+            "entity_type": "wither"
+          }
         },
         "player": "vanilla_refresh:setting/mob_health"
       }

@@ -6,7 +6,9 @@
         "entity": {
           "type": "minecraft:entity_properties",
           "entity": "this",
-          "entity_type": "minecraft:wolf"
+          "predicate": {
+            "entity_type": "minecraft:wolf"
+          }
         }
       }
     }

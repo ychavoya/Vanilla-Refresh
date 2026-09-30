@@ -5,8 +5,7 @@
       "conditions": {
         "location": {
           "type": "minecraft:match_block",
-          "blocks": "minecraft:wheat",
-          "properties": {}
+          "blocks": "minecraft:wheat"
         }
       }
     }

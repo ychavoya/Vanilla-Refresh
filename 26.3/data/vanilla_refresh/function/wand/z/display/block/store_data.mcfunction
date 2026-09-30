@@ -5,7 +5,7 @@
 summon item_display ~ ~ ~ {item:{id:"sponge"},view_range:0f,Tags:["refresh_temp"]}
 
 data modify storage vanilla_refresh:storage temp.name set value {id:""}
-data modify storage vanilla_refresh:storage temp.name.id set from entity @s block_state.Name
+data modify storage vanilla_refresh:storage temp.name.id set from entity @s block_state.id
 
 item modify entity @n[type=item_display,tag=refresh_temp,limit=1] contents {type:"set_name",entity:"this",target:"custom_name",name:[{nbt:"temp.name",storage:"vanilla_refresh:storage"}]}
 data modify storage vanilla_refresh:storage temp.macro.name set from entity @n[type=item_display,distance=..0.01,tag=refresh_temp,limit=1] item.components.minecraft:custom_name
@@ -16,7 +16,7 @@ data modify storage vanilla_refresh:storage temp.macro.name set string storage v
 #############
 
 data modify storage vanilla_refresh:storage temp.properties set value {}
-data modify storage vanilla_refresh:storage temp.properties set from entity @s block_state.Properties
+data modify storage vanilla_refresh:storage temp.properties set from entity @s block_state.properties
 
 item modify entity @n[type=item_display,tag=refresh_temp,limit=1] contents {type:"set_name",entity:"this",target:"custom_name",name:[{nbt:"temp.properties",storage:"vanilla_refresh:storage"}]}
 data modify storage vanilla_refresh:storage temp.macro.properties set from entity @n[type=item_display,distance=..0.01,tag=refresh_temp,limit=1] item.components.minecraft:custom_name

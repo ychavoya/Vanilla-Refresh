@@ -5,8 +5,7 @@
       "conditions": {
         "location": {
           "type": "minecraft:match_block",
-          "blocks": "minecraft:nether_wart",
-          "properties": {}
+          "blocks": "minecraft:nether_wart"
         }
       }
     }

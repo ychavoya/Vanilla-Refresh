@@ -5,8 +5,7 @@
       "conditions": {
         "location": {
           "type": "minecraft:match_block",
-          "blocks": "minecraft:chain_command_block",
-          "properties": {}
+          "blocks": "minecraft:chain_command_block"
         }
       }
     }

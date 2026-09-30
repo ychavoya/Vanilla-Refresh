@@ -5,8 +5,7 @@
       "conditions": {
         "location": {
           "type": "minecraft:match_block",
-          "blocks": "minecraft:diamond_block",
-          "properties": {}
+          "blocks": "minecraft:diamond_block"
         }
       }
     }
